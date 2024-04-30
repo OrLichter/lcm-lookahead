@@ -1,0 +1,37 @@
+name: lcm_lh
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - pillow
+  - pip
+  - python=3.9.15
+  - pytorch=2.2.2
+  - pytorch-lightning=1.6.5
+  - pytorch-cuda=12.1
+  - setuptools
+  - torchaudio=2.2.2
+  - torchmetrics
+  - torchvision=0.17.2
+  - tqdm
+  - pip:
+    - accelerate==0.25.0
+    - diffusers==0.24.0
+    - einops
+    - open-clip-torch
+    - opencv-python==4.8.1.78
+    - tokenizers
+    - transformers==4.36.2
+    - kornia
+    - facenet_pytorch
+    - lpips
+    - dreamsim
+    - pyrallis
+    - wandb
+    - insightface
+    - onnxruntime==1.17.0
+    - -e git+https://github.com/openai/CLIP.git@main#egg=clip

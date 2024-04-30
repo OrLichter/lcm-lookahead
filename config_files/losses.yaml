@@ -1,0 +1,11 @@
+diffusion_losses:
+- name: NoiseLoss
+  weight: 1
+lcm_losses:
+- name: IDLoss
+  weight: 1e-3
+  visualize_every_k: 50
+  init_params:
+    pretrained_arcface_path: /home/dcor/orlichter/consistency_encoder_private/pretrained_models/model_ir_se50.pth
+- name: DreamSIMLoss
+  weight: 1e-3

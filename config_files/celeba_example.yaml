@@ -1,0 +1,11 @@
+datasets:
+  # Celeba
+  - data_root: 'path/to/CelebAMask-HQ/CelebA-HQ-img'
+    metadata_path: 'path/to/CelebAMask-HQ/filename_to_id.json'
+    dataset_weight: 1
+    concept_placeholder: "face"
+balance_datasets: True
+val_dataset:
+  data_root: 'path/to/faces_validation/'
+  # use_only_decoder_prompts: true
+validation_prompts: ['A painting of a face in the style of monet', 'A photo of a face in the forest','A photo of a face as a knight in plate','Fauvism painting of a face']

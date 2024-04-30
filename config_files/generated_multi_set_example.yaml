@@ -1,0 +1,28 @@
+datasets:
+  # Set_1
+  - data_root: 'path/to/generated_random_people_with_style_v1'
+    metadata_path: 'path/to/generated_random_people_with_style_v1/metadata.json'
+    prompt_in_filename: true
+    use_only_vanilla_for_encoder: true
+    dataset_weight: 1
+    concept_placeholder: "face"
+    aug_images: false
+  # Set_2
+  - data_root: 'path/to/generated_people_v1'
+    metadata_path: 'path/to/generated_people_v1/metadata.json'
+    prompt_in_filename: true
+    use_only_vanilla_for_encoder: true
+    dataset_weight: 10
+    concept_placeholder: "face"
+  # Set_3
+  - data_root: 'path/to/generated_random_people_with_style_5_per_ID'
+    metadata_path: 'path/to/generated_random_people_with_style_5_per_ID/metadata.json'
+    prompt_in_filename: true
+    use_only_vanilla_for_encoder: true
+    dataset_weight: 10
+    concept_placeholder: "face"
+    aug_images: false
+balance_datasets: True
+val_dataset:
+  data_root: 'path/to/faces_validation/'
+validation_prompts: ['A painting of a face in the style of monet', 'A photo of a face in the forest','A photo of a face as a knight in plate','Fauvism painting of a face']
